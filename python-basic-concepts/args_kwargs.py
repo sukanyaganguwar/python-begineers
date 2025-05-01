@@ -34,3 +34,4 @@ func_key(hello="Hello",title="Ms.",fname="Sukanya",lname="Ganguwar")
 
 #  * --> here astriek is considered as unpacking operator
 # Types of function parameters  1. positional 2. default 3.Keyword 4.Arbitrary 
+#Remember we have to always defined positional args first, then keyword arguments
