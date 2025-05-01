@@ -22,6 +22,11 @@ def shipping(*args,**kwargs):
 
 shipping("abr", "adb", "dce", fname="John",lname="Brad")    
 
+def func_key(*args,**kwargs):
+   print(f"{kwargs['hello']} {kwargs['title']}{kwargs['fname']} {kwargs['lname']}")
+
+func_key(hello="Hello",title="Ms.",fname="Sukanya",lname="Ganguwar") 
+
 
 # Notes on functions:
 # *args --> allows you to pass multiple on-key arguments.
