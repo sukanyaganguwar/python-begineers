@@ -1,0 +1,20 @@
+# Numeric types
+# The main numeric types are:
+
+# int: holding an arbitrary length signed integer
+# float: normally being implemented internally using a C IEEE 754 64-bit double
+# This differs from C-style languages where integer types have a fixed size (32-bit unsigned, 64-bit, etc).
+
+# For example, in Python, we can write:
+
+x = pow(2, 255)       # generate a 256-bit int and assign to x
+y = x.bit_length()    # display number of bits needed to represent x
+print(y)
+x = pow(2, 53)        # generate a 54-bit int and assign to x
+y = x + 1             # add 1 to the int
+print(y)              # value is 9007199254740993
+y = float(y)          # convert y to a float
+print(y)              # value is 9007199254740992.0!
+
+#In the above example, float(y) is not an accurate representation of the int value of y. Why is that?
+#Internally computers cannot represent all floating point numbers precisely. For example only even numbers can be represented between pow(2,53) and pow(2,54), odd numbers are rounded.
