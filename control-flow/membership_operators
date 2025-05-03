@@ -1,0 +1,42 @@
+# Membership operators are used to test whether a value is present in a sequence (like a list, string, tuple, set, or dictionary).
+
+# Demonstrating the use of membership operators in Python
+
+# 'in' operator: Checks if an element exists in a sequence (like a list, string, or tuple)
+fruits = ['apple', 'banana', 'cherry']
+if 'apple' in fruits:
+    print("Apple is in the list of fruits.")  # This will print because 'apple' is in the list
+
+# 'not in' operator: Checks if an element does not exist in a sequence
+if 'grape' not in fruits:
+    print("Grape is not in the list of fruits.")  # This will print because 'grape' is not in the list
+
+# Membership with strings: You can also use membership operators with strings to check for substrings
+text = "Hello, world!"
+if 'world' in text:
+    print("The word 'world' is in the text.")  # This will print because 'world' is a substring of the text
+
+# Membership with tuples: You can use membership operators with tuples as well
+numbers = (1, 2, 3, 4, 5)
+if 3 in numbers:
+    print("The number 3 is in the tuple.")  # This will print because 3 is in the tuple
+# Membership with dictionaries: You can check for keys in a dictionary
+person = {'name': 'Alice', 'age': 30}
+if 'name' in person:
+    print("The key 'name' is in the dictionary.")  # This will print because 'name' is a key in the dictionary
+# Joining two lists
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+list3 = list1 + list2  # Concatenating two lists
+print("Joined list:", list3)  # This will print the joined list
+# Output: Joined list: ['a', 'b', 'c', 1, 2, 3]
+
+set1 = {1, 2, 3}
+if 2 in set1:
+    print("2 is in the set.")  # This will print because 2 is in the set
+# Output: 2 is in the set.
+
+if 4 not in set1:
+    print(" 4 is not present in the set1.")
+
+
