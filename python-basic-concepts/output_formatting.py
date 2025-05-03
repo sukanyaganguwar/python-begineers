@@ -14,9 +14,6 @@ print("Hello,{n} and {g} ".format(n=name,g=greetings)) # this is called specific
 
 
 
-
-
-
 # MORE WAYS TO PRINT STATEMENTS IN PYTHON
 print("I Like Pizza")
 
